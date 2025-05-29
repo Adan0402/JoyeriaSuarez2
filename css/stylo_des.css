@@ -1,0 +1,136 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #b89b5e; /* dorado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header .home-icon a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 30px;
+}
+
+/* Barra de acciones */
+.actions-bar {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Botón PDF */
+.pdf-button {
+    background-color: #b89b5e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pdf-button:hover {
+    background-color: #a88c4e;
+    transform: translateY(-2px);
+}
+
+/* Tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b89b5e;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c0c0c0; /* plateado */
+}
+
+/* Tarjetas deshabilitadas */
+.card.disabled {
+    position: relative;
+    opacity: 0.85;
+}
+
+.card.disabled::before {
+    content: "DESHABILITADO";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e5e5e5;
+    font-size: 14px;
+    color: #888;
+}

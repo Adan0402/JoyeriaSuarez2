@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juárez Joyería</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b89b5e;
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #b89b5e;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .carousel {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .carousel img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        .welcome {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #b89b5e;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .login-button {
+            display: inline-block;
+            background-color: #b89b5e;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .login-button:hover {
+            background-color: #a88c4e;
+        }
+        .create-account-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: silver;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .create-account-button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <a href="FrmAddCliente.php" class="create-account-button">Crear Cuenta</a>
+
+    <header>
+        Bienvenidos a Suárez Joyería
+    </header>
+    <nav>
+        <a href="galeria.html">Galería</a>
+        <a href="colecciones.html">Colecciones</a>
+        <a href="relojes.html">Relojes</a>
+        <a href="pulseras.html">Pulseras</a>
+        <a href="historia.html">Nuestra Historia</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section class="carousel">
+        <img src="imagenes/ECI-OVIEDO_WEB.jpg" alt="Imagen 1">
+        <img src="imagenes/Tiendas.jpg" alt="Imagen 2">
+        <img src="imagenes/jjjj.jpg" alt="Imagen 3">
+    </section>
+
+    <section class="welcome">
+        <h2>Elegancia y Prestigio</h2>
+        <p>Descubre nuestra exclusiva colección de joyería fina, diseñada para realzar tu belleza con un toque de distinción.</p>
+        <a href="loginCliente.php" class="login-button">Accede como Cliente</a>
+        <a href="login_admin.php" class="login-button">Accede como Administrador</a>
+    </section>
+
+     <section class="carousel">
+        <img src="imagenes/ECI-OVIEDO_WEB.jpg" alt="Imagen 1">
+        <img src="imagenes/Tiendas.jpg" alt="Imagen 2">
+        <img src="imagenes/jjjj.jpg" alt="Imagen 3">
+    </section>
+
+    <footer>
+        Contacto: <a href="mailto:contacto@juarezjoyeria.com">contacto@juarezjoyeria.com</a> | Tel: (123) 456-7890 | 
+        <a href="https://www.joyeriasuarez.com/es/Home" target="_blank" style="color: white; text-decoration: none; font-weight: bold;">Visita nuestra página oficial</a>
+    </footer>
+</body>
+</html>

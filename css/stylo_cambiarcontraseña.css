@@ -1,0 +1,167 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f5f0; /* Fondo beige claro */
+    color: #333;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Icono de casita */
+.home-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 100;
+}
+
+.home-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #b89b5e; /* Dorado */
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.home-icon a:hover {
+    background: #a88c4e; /* Dorado oscuro */
+    transform: scale(1.1);
+}
+
+/* Encabezado */
+header {
+    background-color: #000;
+    color: #d4af37;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 24px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e0d6c2;
+}
+
+/* Títulos */
+h1 {
+    color: #b89b5e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: #b89b5e;
+}
+
+/* Formulario */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    color: #555;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #b89b5e;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(184, 155, 94, 0.2);
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    background-color: #b89b5e;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #a88c4e;
+}
+
+/* Mensajes */
+.mensaje {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.mensaje-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.mensaje-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Enlace volver */
+.volver {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.volver a {
+    color: #b89b5e;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.volver a:hover {
+    color: #a88c4e;
+    text-decoration: underline;
+}

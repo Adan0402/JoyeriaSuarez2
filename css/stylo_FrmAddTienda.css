@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 40px;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #B89B5E;
+    margin-bottom: 30px;
+}
+
+/* Botón de inicio */
+.home-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.home-button a {
+    text-decoration: none;
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #B89B5E;
+    font-weight: bold;
+    border: 1px solid #B89B5E;
+    transition: all 0.3s ease;
+}
+
+.home-button a:hover {
+    background-color: #B89B5E;
+    color: white;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #B89B5E;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(184, 155, 94, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #B89B5E;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(184, 155, 94, 0.2);
+}
+
+input[type="submit"] {
+    background-color: #B89B5E;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #9C824A;
+}
+
+/* Estilos para el campo de imagen */
+.file-input input[type="file"] {
+    border: 1px dashed #B89B5E;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.file-preview {
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Mensajes */
+.msg-success {
+    color: #28a745;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+}
+
+.msg-error {
+    color: #dc3545;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
