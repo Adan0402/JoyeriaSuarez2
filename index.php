@@ -148,6 +148,12 @@ if (!isset($_SESSION['admin_id'])) {
             <a href="ShowAdmin.php">Administracion</a>
         </div>
 
+        <div class="menu-item">
+            <h3>Nueva LLinea</h3>
+            <a href="FrmAddLinea.php">nueva Linea</a>
+        </div>
+
+
     </div>
 
     <button class="logout-btn" onclick="window.location.href='logout.php'" title="Cerrar sesión">
